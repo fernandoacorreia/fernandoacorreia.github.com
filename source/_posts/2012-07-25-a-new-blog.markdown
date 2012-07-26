@@ -31,6 +31,8 @@ I'm using [Octopress](http://octopress.org/) to publish this blog on GitHub. The
 * The blog source is text-based.
 * It uses markdown.
 * It's stored in a git repository.
+* It's fully versioned.
+* I have a backup of my blog on my laptop and another as a GitHub repository.
 * It's hosted on *the* social network for programmers.
 * It has many good options for source code snippets.
 * It can handle any ammount of traffic.
