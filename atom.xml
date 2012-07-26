@@ -4,7 +4,7 @@
   <title><![CDATA[Fernando Correia's Blog]]></title>
   <link href="http://fernandoacorreia.github.com/atom.xml" rel="self"/>
   <link href="http://fernandoacorreia.github.com/"/>
-  <updated>2012-07-25T21:51:24-03:00</updated>
+  <updated>2012-07-26T12:55:29-03:00</updated>
   <id>http://fernandoacorreia.github.com/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Installing rbenv on Ubuntu]]></title>
+    <link href="http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu/"/>
+    <updated>2012-07-26T12:52:00-03:00</updated>
+    <id>http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>teste teste</p>
+
+<div><script src='https://gist.github.com/3177482.js?file='></script>
+<noscript><pre><code># pre-reqs
+sudo apt-get install git-core build-essential libssl-dev libreadline-dev zlib1g-dev libxml2-dev libxslt-dev
+
+# rbenv
+cd
+git clone https://github.com/sstephenson/rbenv.git .rbenv
+echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
+exec $SHELL
+
+# ruby-build
+mkdir -p ~/.rbenv/plugins
+cd ~/.rbenv/plugins
+git clone https://github.com/sstephenson/ruby-build.git
+
+# install some rubies
+cd
+rbenv install 1.9.2-p290
+rbenv install 1.9.2-p320
+rbenv install 1.9.3-p194
+rbenv rehash
+
+# set a global ruby
+rbenv global 1.9.2-p290</code></pre></noscript></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A New Blog]]></title>
