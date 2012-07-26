@@ -3,7 +3,7 @@ layout: post
 title: "Installing rbenv on Ubuntu"
 date: 2012-07-26 12:52
 comments: true
-categories: ["Ubuntu", "rbenv"]
+categories: ["Ubuntu"]
 ---
 
 I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
