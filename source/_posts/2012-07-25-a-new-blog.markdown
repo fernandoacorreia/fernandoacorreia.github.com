@@ -1,0 +1,37 @@
+---
+layout: post
+title: "A New Blog"
+date: 2012-07-25 20:43
+comments: true
+categories: general
+---
+In the last few years I created a few blogs focused in different audiences:
+an [English-language blog](http://fernandoacorreia.wordpress.com/),
+a [Portuguese-language one](http://blogdofernandocorreia.wordpress.com/),
+a blog focusing on [cloud computing](http://plataformanuvem.wordpress.com/) and another specifically about
+[Windows Azure](http://pensandoazure.wordpress.com/).
+
+Having blogs for specific subjects or audiences has its advantages; the content is more coherent. Also there's the
+question of language: writing in Portuguese I reach people around me more easily, but writing in English I can be part
+of the ongoing global exchange of information about computing.
+
+But the paradox is that I found out that with so many blogs, I was writing less often.
+Having posts spread all over the place makes it more difficult to
+manage an online presence. After spending some time writing about a subject, it gets awkward to post in another
+blog that looks abandoned.
+
+So I've decided to experiment with having a single, default place to write about any subject that raises my interest
+at any given time. I've also decided to write mostly in English. The Brazilians that value their career in computing
+know that they need to be able to read English proficiently. After all, English is the lingua franca of Computer
+Science. And Google Translator is getting surprisingly accurate...
+
+I'm using [Octopress](http://octopress.org/) to publish this blog on GitHub. There's a lot to like about this:
+
+* The blog source is text-based.
+* It uses markdown.
+* It's stored in a git repository.
+* It's hosted on *the* social network for programmers.
+* It has many good options for source code snippets.
+* It can handle any ammount of traffic.
+* I can use a custom domain.
+* And I have control over the blog's structure and appearance.
