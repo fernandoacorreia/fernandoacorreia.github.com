@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Fernando Correia's Blog]]></title>
-  <link href="http://fernandoacorreia.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: general | Fernando Correia's Blog]]></title>
+  <link href="http://fernandoacorreia.github.com/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://fernandoacorreia.github.com/"/>
   <updated>2012-07-25T21:22:58-03:00</updated>
   <id>http://fernandoacorreia.github.com/</id>
@@ -24,7 +24,7 @@ a <a href="http://blogdofernandocorreia.wordpress.com/">Portuguese-language one<
 a blog focusing on <a href="http://plataformanuvem.wordpress.com/">cloud computing</a> and another specifically about
 <a href="http://pensandoazure.wordpress.com/">Windows Azure</a>.</p>
 
-<p>Having blogs for specific subjects or audiences has its advantages; the content is more coherent. Also there&#8217;s the
+<p>Having blogs for specific subjects or audiences has its advantages; the content is more coherent. Also there's the
 question of language: writing in Portuguese I reach people around me more easily, but writing in English I can be part
 of the ongoing global exchange of information about computing.</p>
 
@@ -33,22 +33,22 @@ Having posts spread all over the place makes it more difficult to
 manage an online presence. After spending some time writing about a subject, it gets awkward to post in another
 blog that looks abandoned.</p>
 
-<p>So I&#8217;ve decided to experiment with having a single, default place to write about any subject that raises my interest
-at any given time. I&#8217;ve also decided to write mostly in English. The Brazilians that value their career in computing
+<p>So I've decided to experiment with having a single, default place to write about any subject that raises my interest
+at any given time. I've also decided to write mostly in English. The Brazilians that value their career in computing
 know that they need to be able to read English proficiently. After all, English is the lingua franca of Computer
-Science. And Google Translator is getting surprisingly accurate&#8230;</p>
+Science. And Google Translator is getting surprisingly accurate...</p>
 
-<p>I&#8217;m using <a href="http://octopress.org/">Octopress</a> to publish this blog on GitHub. There&#8217;s a lot to like about this:</p>
+<p>I'm using <a href="http://octopress.org/">Octopress</a> to publish this blog on GitHub. There's a lot to like about this:</p>
 
 <ul>
 <li>The blog source is text-based.</li>
 <li>It uses markdown.</li>
-<li>It&#8217;s stored in a git repository.</li>
-<li>It&#8217;s hosted on <em>the</em> social network for programmers.</li>
+<li>It's stored in a git repository.</li>
+<li>It's hosted on <em>the</em> social network for programmers.</li>
 <li>It has many good options for source code snippets.</li>
 <li>It can handle any ammount of traffic.</li>
 <li>I can use a custom domain.</li>
-<li>And I have control over the blog&#8217;s structure and appearance.</li>
+<li>And I have control over the blog's structure and appearance.</li>
 </ul>
 
 ]]></content>
