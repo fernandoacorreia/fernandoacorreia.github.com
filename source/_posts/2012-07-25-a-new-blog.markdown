@@ -5,6 +5,7 @@ date: 2012-07-25 20:43
 comments: true
 categories: general
 ---
+
 In the last few years I created a few blogs focused in different audiences:
 an [English-language blog](http://fernandoacorreia.wordpress.com/),
 a [Portuguese-language one](http://blogdofernandocorreia.wordpress.com/),
