@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Fernando Correia's Blog]]></title>
-  <link href="http://fernandoacorreia.github.com/atom.xml" rel="self"/>
-  <link href="http://fernandoacorreia.github.com/"/>
-  <updated>2012-07-26T20:43:01-03:00</updated>
-  <id>http://fernandoacorreia.github.com/</id>
+  <link href="http://www.fernandocorreia.info/atom.xml" rel="self"/>
+  <link href="http://www.fernandocorreia.info/"/>
+  <updated>2012-07-26T20:54:14-03:00</updated>
+  <id>http://www.fernandocorreia.info/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
     <email><![CDATA[fernandoacorreia@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Installing rbenv on Ubuntu]]></title>
-    <link href="http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu/"/>
+    <link href="http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/"/>
     <updated>2012-07-26T12:52:00-03:00</updated>
-    <id>http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu</id>
+    <id>http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu</id>
     <content type="html"><![CDATA[<p>I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
 Octopress&#8217; documentation recommends installing it through a Ruby environment manager: either RVM or rbenv.</p>
 
@@ -70,9 +70,9 @@ advertised. A great experience.</p>
   
   <entry>
     <title type="html"><![CDATA[A New Blog]]></title>
-    <link href="http://fernandoacorreia.github.com/blog/2012/07/25/a-new-blog/"/>
+    <link href="http://www.fernandocorreia.info/blog/2012/07/25/a-new-blog/"/>
     <updated>2012-07-25T20:43:00-03:00</updated>
-    <id>http://fernandoacorreia.github.com/blog/2012/07/25/a-new-blog</id>
+    <id>http://www.fernandocorreia.info/blog/2012/07/25/a-new-blog</id>
     <content type="html"><![CDATA[<p>In the last few years I created a few blogs focused in different audiences:
 an <a href="http://fernandoacorreia.wordpress.com/">English-language blog</a>,
 a <a href="http://blogdofernandocorreia.wordpress.com/">Portuguese-language one</a>,
@@ -99,6 +99,8 @@ Science. And Google Translator is getting surprisingly accurate&#8230;</p>
 <li>The blog source is text-based.</li>
 <li>It uses markdown.</li>
 <li>It&#8217;s stored in a git repository.</li>
+<li>It&#8217;s fully versioned.</li>
+<li>I have a backup of my blog on my laptop and another as a GitHub repository.</li>
 <li>It&#8217;s hosted on <em>the</em> social network for programmers.</li>
 <li>It has many good options for source code snippets.</li>
 <li>It can handle any ammount of traffic.</li>

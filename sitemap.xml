@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://fernandoacorreia.github.com/blog/2012/07/25/a-new-blog/</loc>
-        <lastmod>2012-07-26T13:02:56-03:00</lastmod>
+        <loc>http://www.fernandocorreia.info/blog/2012/07/25/a-new-blog/</loc>
+        <lastmod>2012-07-26T20:54:07-03:00</lastmod>
     </url>
     <url>
-        <loc>http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu/</loc>
+        <loc>http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/</loc>
         <lastmod>2012-07-26T20:26:43-03:00</lastmod>
     </url>
     <url>
-        <loc>http://fernandoacorreia.github.com/</loc>
-        <lastmod>2012-07-26T20:26:43-03:00</lastmod>
+        <loc>http://www.fernandocorreia.info/</loc>
+        <lastmod>2012-07-26T20:54:07-03:00</lastmod>
     </url>
     <url>
-        <loc>http://fernandoacorreia.github.com/blog/archives/</loc>
-        <lastmod>2012-07-26T20:26:43-03:00</lastmod>
+        <loc>http://www.fernandocorreia.info/blog/archives/</loc>
+        <lastmod>2012-07-26T20:54:07-03:00</lastmod>
     </url>
 </urlset>

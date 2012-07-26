@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: general | Fernando Correia's Blog]]></title>
-  <link href="http://fernandoacorreia.github.com/blog/categories/general/atom.xml" rel="self"/>
-  <link href="http://fernandoacorreia.github.com/"/>
-  <updated>2012-07-26T20:43:01-03:00</updated>
-  <id>http://fernandoacorreia.github.com/</id>
+  <link href="http://www.fernandocorreia.info/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://www.fernandocorreia.info/"/>
+  <updated>2012-07-26T20:54:14-03:00</updated>
+  <id>http://www.fernandocorreia.info/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
     <email><![CDATA[fernandoacorreia@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[A New Blog]]></title>
-    <link href="http://fernandoacorreia.github.com/blog/2012/07/25/a-new-blog/"/>
+    <link href="http://www.fernandocorreia.info/blog/2012/07/25/a-new-blog/"/>
     <updated>2012-07-25T20:43:00-03:00</updated>
-    <id>http://fernandoacorreia.github.com/blog/2012/07/25/a-new-blog</id>
+    <id>http://www.fernandocorreia.info/blog/2012/07/25/a-new-blog</id>
     <content type="html"><![CDATA[<p>In the last few years I created a few blogs focused in different audiences:
 an <a href="http://fernandoacorreia.wordpress.com/">English-language blog</a>,
 a <a href="http://blogdofernandocorreia.wordpress.com/">Portuguese-language one</a>,
@@ -44,6 +44,8 @@ Science. And Google Translator is getting surprisingly accurate...</p>
 <li>The blog source is text-based.</li>
 <li>It uses markdown.</li>
 <li>It's stored in a git repository.</li>
+<li>It's fully versioned.</li>
+<li>I have a backup of my blog on my laptop and another as a GitHub repository.</li>
 <li>It's hosted on <em>the</em> social network for programmers.</li>
 <li>It has many good options for source code snippets.</li>
 <li>It can handle any ammount of traffic.</li>
