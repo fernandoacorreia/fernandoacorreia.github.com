@@ -9,10 +9,8 @@
   <meta name="author" content="Fernando Correia">
 
   
-  <meta name="description" content="teste teste # pre-reqs
-sudo apt-get install git-core build-essential libssl-dev libreadline-dev zlib1g-dev libxml2-dev libxslt-dev # rbenv
-cd
-git &hellip;">
+  <meta name="description" content="I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
+Octopress&#8217; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,7 +94,23 @@ git &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>teste teste</p>
+  <div class="entry-content"><p>I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
+Octopress&#8217; documentation recommends installing it through a Ruby environment manager: either RVM or rbenv.</p>
+
+<p>The last time I was dabbling with Ruby was a few years ago, before these tools were introduced. So I didn&#8217;t have a
+favorite to pick. To choose one I
+searched Google, read a little bit and came to the conclusion that rbenv is lighter and possibly simpler, while RVM
+is more complex and more powerful. I&#8217;m not developing in Ruby so light and simple suits me. At the same time, RVM
+messes with the builtin <code>cd</code> command and I&#8217;d rather leave it alone. So I picked rbenv.</p>
+
+<p>Ubuntu has has a rbenv package, so I went for it first. I quickly had rbenv running but when I tried to install the
+ruby-build rbenv plugin I couldn&#8217;t get it to work. I could have used an alternate route to install ruby-build
+but I prefer the path of less resistance. I don&#8217;t like fighting the tools.</p>
+
+<p>So I uninstalled Ubuntu&#8217;s rbenv package (which, by the way, was several versions out-of-date) and did a manual install
+of rbenv from its project site.</p>
+
+<p>These are the commands I used to install rbenv in Ubuntu 12.04 LTS (Precise Pangolin):</p>
 
 <div><script src='https://gist.github.com/3177482.js?file='></script>
 <noscript><pre><code># pre-reqs
@@ -124,6 +138,9 @@ rbenv rehash
 # set a global ruby
 rbenv global 1.9.2-p290</code></pre></noscript></div>
 
+
+<p>Installing Ruby takes some time, between a large download and setup, but everything went smoothly and worked as
+advertised. A great experience.</p>
 </div>
   
   

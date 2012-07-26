@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rbenv | Fernando Correia's Blog]]></title>
+  <link href="http://fernandoacorreia.github.com/blog/categories/rbenv/atom.xml" rel="self"/>
+  <link href="http://fernandoacorreia.github.com/"/>
+  <updated>2012-07-26T13:29:27-03:00</updated>
+  <id>http://fernandoacorreia.github.com/</id>
+  <author>
+    <name><![CDATA[Fernando Correia]]></name>
+    <email><![CDATA[fernandoacorreia@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Installing rbenv on Ubuntu]]></title>
+    <link href="http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu/"/>
+    <updated>2012-07-26T12:52:00-03:00</updated>
+    <id>http://fernandoacorreia.github.com/blog/2012/07/26/installing-rbenv-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
+Octopress' documentation recommends installing it through a Ruby environment manager: either RVM or rbenv.</p>
+
+<p>The last time I was dabbling with Ruby was a few years ago, before these tools were introduced. So I didn't have a
+favorite to pick. To choose one I
+searched Google, read a little bit and came to the conclusion that rbenv is lighter and possibly simpler, while RVM
+is more complex and more powerful. I'm not developing in Ruby so light and simple suits me. At the same time, RVM
+messes with the builtin <code>cd</code> command and I'd rather leave it alone. So I picked rbenv.</p>
+
+<p>Ubuntu has has a rbenv package, so I went for it first. I quickly had rbenv running but when I tried to install the
+ruby-build rbenv plugin I couldn't get it to work. I could have used an alternate route to install ruby-build
+but I prefer the path of less resistance. I don't like fighting the tools.</p>
+
+<p>So I uninstalled Ubuntu's rbenv package (which, by the way, was several versions out-of-date) and did a manual install
+of rbenv from its project site.</p>
+
+<p>These are the commands I used to install rbenv in Ubuntu 12.04 LTS (Precise Pangolin):</p>
+
+<p><div><script src='https://gist.github.com/3177482.js?file='></script>
+<noscript><pre><code># pre-reqs
+sudo apt-get install git-core build-essential libssl-dev libreadline-dev zlib1g-dev libxml2-dev libxslt-dev
+
+# rbenv
+cd
+git clone https://github.com/sstephenson/rbenv.git .rbenv
+echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
+exec $SHELL
+
+# ruby-build
+mkdir -p ~/.rbenv/plugins
+cd ~/.rbenv/plugins
+git clone https://github.com/sstephenson/ruby-build.git
+
+# install some rubies
+cd
+rbenv install 1.9.2-p290
+rbenv install 1.9.2-p320
+rbenv install 1.9.3-p194
+rbenv rehash
+
+# set a global ruby
+rbenv global 1.9.2-p290</code></pre></noscript></div>
+</p>
+
+<p>Installing Ruby takes some time, between a large download and setup, but everything went smoothly and worked as
+advertised. A great experience.</p>
+]]></content>
+  </entry>
+  
+</feed>
