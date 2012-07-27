@@ -70,6 +70,7 @@ Octopress&#8217; &hellip;">
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
 </ul>
 
 </nav>
@@ -115,46 +116,12 @@ searched Google, read a little bit and came to the conclusion that rbenv is ligh
 is more complex and more powerful. I&#8217;m not developing in Ruby so light and simple suits me. At the same time, RVM
 messes with the builtin <code>cd</code> command and I&#8217;d rather leave it alone. So I picked rbenv.</p>
 
-<p>Ubuntu has has a rbenv package, so I went for it first. I quickly had rbenv running but when I tried to install the
-ruby-build rbenv plugin I couldn&#8217;t get it to work. I could have used an alternate route to install ruby-build
-but I prefer the path of less resistance. I don&#8217;t like fighting the tools.</p>
-
-<p>So I uninstalled Ubuntu&#8217;s rbenv package (which, by the way, was several versions out-of-date) and did a manual install
-of rbenv from its project site.</p>
-
-<p>These are the commands I used to install rbenv in Ubuntu 12.04 LTS (Precise Pangolin):</p>
-
-<div><script src='https://gist.github.com/3177482.js?file='></script>
-<noscript><pre><code># pre-reqs
-sudo apt-get install git-core build-essential libssl-dev libreadline-dev zlib1g-dev libxml2-dev libxslt-dev
-
-# rbenv
-cd
-git clone https://github.com/sstephenson/rbenv.git .rbenv
-echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
-echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
-exec $SHELL
-
-# ruby-build
-mkdir -p ~/.rbenv/plugins
-cd ~/.rbenv/plugins
-git clone https://github.com/sstephenson/ruby-build.git
-
-# install some rubies
-cd
-rbenv install 1.9.2-p290
-rbenv install 1.9.2-p320
-rbenv install 1.9.3-p194
-rbenv rehash
-
-# set a global ruby
-rbenv global 1.9.2-p290</code></pre></noscript></div>
-
-
-<p>Installing Ruby takes some time, between a large download and setup, but everything went smoothly and worked as
-advertised. A great experience.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/26/installing-rbenv-on-ubuntu/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -199,32 +166,14 @@ question of language: writing in Portuguese I reach people around me more easily
 of the ongoing global exchange of information about computing.</p>
 
 <p>But the paradox is that I found out that with so many blogs, I was writing less often.
-Having posts spread all over the place makes it more difficult to
-manage an online presence. After spending some time writing about a subject, it gets awkward to post in another
-blog that looks abandoned.</p>
-
-<p>So I&#8217;ve decided to experiment with having a single, default place to write about any subject that raises my interest
-at any given time. I&#8217;ve also decided to write mostly in English. The Brazilians that value their career in computing
-know that they need to be able to read English proficiently. After all, English is the lingua franca of Computer
-Science. And Google Translator is getting surprisingly accurate&#8230;</p>
-
-<p>I&#8217;m using <a href="http://octopress.org/">Octopress</a> to publish this blog on GitHub. There&#8217;s a lot to like about this:</p>
-
-<ul>
-<li>The blog source is text-based.</li>
-<li>It uses markdown.</li>
-<li>It&#8217;s stored in a git repository.</li>
-<li>It&#8217;s fully versioned.</li>
-<li>I have a backup of my blog on my laptop and another as a GitHub repository.</li>
-<li>It&#8217;s hosted on <em>the</em> social network for programmers.</li>
-<li>It has many good options for source code snippets.</li>
-<li>It can handle any ammount of traffic.</li>
-<li>I can use a custom domain.</li>
-<li>And I have control over the blog&#8217;s structure and appearance.</li>
-</ul>
+Having posts spread all over the place makes it more difficult to manage an online presence.</p>
 
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/25/a-new-blog/">Read on &rarr;</a>
+    </footer>
   
 
 

@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Installing rbenv on Ubuntu - Fernando Correia's Blog</title>
+  <title>about - Fernando Correia's Blog</title>
   <meta name="author" content="Fernando Correia">
 
   
-  <meta name="description" content="I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
-Octopress&#8217; &hellip;">
+  <meta name="description" content="about Jul 26th, 2012 I&#8217;m Brazilian, 42 years old. I&#8217;ve been developing software for over 25 years. Currently I work as a software &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Octopress&#8217; &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/">
+  <link rel="canonical" href="http://www.fernandocorreia.info/about/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,15 +76,40 @@ Octopress&#8217; &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Installing rbenv on Ubuntu</h1>
-    
-    
+    <h1 class="entry-title">about</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-26T21:01:00-03:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>I&#8217;m Brazilian, 42 years old. I&#8217;ve been developing software for over 25 years. Currently I work as a software architect
+developing reusable components for software-as-a-service products.</p>
+
+<p>I&#8217;ve worked with a lot of tools and technologies. At the moment I&#8217;m mainly using C# and developing for the Azure
+platform. I&#8217;m also using JavaScript for browser applications and some Java for services.</p>
+
+<p>You can reach me on <a href="(http://twitter.com/facorreia">Twitter</a>,
+<a href="http://br.linkedin.com/pub/fernando-correia/11/1b/a1a">LinkedIn</a>
+or email (fernandoacorreia@gmail.com).</p>
+
+  
+    <footer>
       <p class="meta">
         
+        
 
 
 
@@ -97,100 +121,13 @@ Octopress&#8217; &hellip;">
   
 
 
-<time datetime="2012-07-26T12:52:00-03:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
+<time datetime="2012-07-26T21:01:00-03:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
         
       </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>I chose Octopress to publish this blog. When I was reading on how to install it, I learned that it required Ruby 1.9.2.
-Octopress&#8217; documentation recommends installing it through a Ruby environment manager: either RVM or rbenv.</p>
-
-<p>The last time I was dabbling with Ruby was a few years ago, before these tools were introduced. So I didn&#8217;t have a
-favorite to pick. To choose one I
-searched Google, read a little bit and came to the conclusion that rbenv is lighter and possibly simpler, while RVM
-is more complex and more powerful. I&#8217;m not developing in Ruby so light and simple suits me. At the same time, RVM
-messes with the builtin <code>cd</code> command and I&#8217;d rather leave it alone. So I picked rbenv.</p>
-
-<!-- more -->
-
-
-<p>Ubuntu has has a rbenv package, so I went for it first. I quickly had rbenv running but when I tried to install the
-ruby-build rbenv plugin I couldn&#8217;t get it to work. I could have used an alternate route to install ruby-build
-but I prefer the path of less resistance. I don&#8217;t like fighting the tools.</p>
-
-<p>So I uninstalled Ubuntu&#8217;s rbenv package (which, by the way, was several versions out-of-date) and did a manual install
-of rbenv from its project site.</p>
-
-<p>These are the commands I used to install rbenv in Ubuntu 12.04 LTS (Precise Pangolin):</p>
-
-<div><script src='https://gist.github.com/3177482.js?file='></script>
-<noscript><pre><code># pre-reqs
-sudo apt-get install git-core build-essential libssl-dev libreadline-dev zlib1g-dev libxml2-dev libxslt-dev
-
-# rbenv
-cd
-git clone https://github.com/sstephenson/rbenv.git .rbenv
-echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
-echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
-exec $SHELL
-
-# ruby-build
-mkdir -p ~/.rbenv/plugins
-cd ~/.rbenv/plugins
-git clone https://github.com/sstephenson/ruby-build.git
-
-# install some rubies
-cd
-rbenv install 1.9.2-p290
-rbenv install 1.9.2-p320
-rbenv install 1.9.3-p194
-rbenv rehash
-
-# set a global ruby
-rbenv global 1.9.2-p290</code></pre></noscript></div>
-
-
-<p>Installing Ruby takes some time, between a large download and setup, but everything went smoothly and worked as
-advertised. A great experience.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
       
+        <div class="sharing">
   
-
-<span class="byline author vcard">Posted by <span class="fn">Fernando Correia</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-26T12:52:00-03:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/" data-via="facorreia" data-counturl="http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.fernandocorreia.info/about/index.html" data-via="facorreia" data-counturl="http://www.fernandocorreia.info/about/index.html" >Tweet</a>
   
   
   
@@ -198,14 +135,9 @@ advertised. A great experience.</p>
   
 </div>
 
-    
-    <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/07/25/a-new-blog/" title="Previous Post: A New Blog">&laquo; A New Blog</a>
-      
-      
-    </p>
-  </footer>
+    </footer>
+  
 </article>
 
   <section>
@@ -273,8 +205,8 @@ advertised. A great experience.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/';
-        var disqus_url = 'http://www.fernandocorreia.info/blog/2012/07/26/installing-rbenv-on-ubuntu/';
+        var disqus_identifier = 'http://www.fernandocorreia.info/about/index.html';
+        var disqus_url = 'http://www.fernandocorreia.info/about/index.html';
         var disqus_script = 'embed.js';
       
     (function () {
