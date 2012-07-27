@@ -13,6 +13,8 @@ to host a blog or a content site. One quote caught my attention:
 There are no entry points to hack and there is no live webapp to go down.
 {% endblockquote %}
 
+<!-- more -->
+
 Static sites are worry-free. It's a whole lot less surface area with potential
 vulnerabilities. It's one less piece of software to worry about security patches. It's one less vector of attack.
 
