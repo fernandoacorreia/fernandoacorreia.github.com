@@ -4,7 +4,7 @@
   <title><![CDATA[Fernando Correia's Blog]]></title>
   <link href="http://www.fernandocorreia.info/atom.xml" rel="self"/>
   <link href="http://www.fernandocorreia.info/"/>
-  <updated>2012-07-27T12:30:31-03:00</updated>
+  <updated>2012-07-27T20:23:24-03:00</updated>
   <id>http://www.fernandocorreia.info/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Static websites are more resilient and cost-effective]]></title>
+    <link href="http://www.fernandocorreia.info/blog/2012/07/27/static-websites-are-more-resilient-and-cost-effective/"/>
+    <updated>2012-07-27T20:04:00-03:00</updated>
+    <id>http://www.fernandocorreia.info/blog/2012/07/27/static-websites-are-more-resilient-and-cost-effective</id>
+    <content type="html"><![CDATA[<p>Dave Cole, from Development Seed, wrote a
+<a href="http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/">comprehensive article</a>
+on their journey from developing
+sites with heavy-duty CMSs, through dynamic client-side pages, to &#8220;devising a process by which we build static sites
+dynamically&#8221;. He explains how they leverage single-purpose web applications, existing or custom-made, to make that
+easier.</p>
+
+<p>One of the chief benefits he mentions is:</p>
+
+<blockquote><p>We can deploy our projects on practically any web server and not worry about whether it has the right software to run our application or the technical resources to handle high traffic.</p><footer><strong>Dave Cole</strong> <cite><a href='http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/'>How We Build CMS-Free Websites</a></cite></footer></blockquote>
+
+
+
+
+<!-- more -->
+
+
+<p>That makes sense to me and I can see this model working for many websites. This reminds me of old-school stuff
+like Microsoft Frontpage&#8230; But those sites tended to be too static. Combining static content with web services and
+weaving all that with client-side JavaScript can be a powerful strategy.</p>
+
+<p>Each component does what it does best, whether it&#8217;s
+serving static files (possibly through a CDN), providing single-purpose dynamic content (such as pictures, video or
+comments) or implementing client-side customization and functionality.</p>
+
+<p>This blog follows this approach: it&#8217;s built with Octopress, it&#8217;s hosted on GitHub Pages and it uses services like
+Google Search, Twitter and Disqus for interactivity.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Static sites are worry-free]]></title>
@@ -22,6 +57,11 @@
 to host a blog or a content site. One quote caught my attention:</p>
 
 <blockquote><p>There are no entry points to hack and there is no live webapp to go down.</p><footer><strong>Young Hahn</strong> <cite><a href='http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/'>Using Jekyll and GitHub Pages for Our Site</a></cite></footer></blockquote>
+
+
+
+
+<!-- more -->
 
 
 <p>Static sites are worry-free. It&#8217;s a whole lot less surface area with potential
