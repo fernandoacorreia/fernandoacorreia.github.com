@@ -4,7 +4,7 @@
   <title><![CDATA[Category: general | Fernando Correia's Blog]]></title>
   <link href="http://www.fernandocorreia.info/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://www.fernandocorreia.info/"/>
-  <updated>2012-07-26T21:54:16-03:00</updated>
+  <updated>2012-07-27T12:30:31-03:00</updated>
   <id>http://www.fernandocorreia.info/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Static sites are worry-free]]></title>
+    <link href="http://www.fernandocorreia.info/blog/2012/07/27/static-sites-are-worry-free/"/>
+    <updated>2012-07-27T12:18:00-03:00</updated>
+    <id>http://www.fernandocorreia.info/blog/2012/07/27/static-sites-are-worry-free</id>
+    <content type="html"><![CDATA[<p>Today I was reading a few more articles about the experience of using static pages instead of a dynamic engine
+to host a blog or a content site. One quote caught my attention:</p>
+
+<p><blockquote><p>There are no entry points to hack and there is no live webapp to go down.</p><footer><strong>Young Hahn</strong> <cite><a href='http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/'>Using Jekyll and GitHub Pages for Our Site</a></cite></footer></blockquote></p>
+
+<p>Static sites are worry-free. It's a whole lot less surface area with potential
+vulnerabilities. It's one less piece of software to worry about security patches. It's one less vector of attack.</p>
+
+<p>For the sake of security, I don't usually host a blog on the same server I have other stuff I care about.
+But I might host a static site.</p>
+
+<p>In this sense, using Octopress for my blog can make my life simpler.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A New Blog]]></title>
