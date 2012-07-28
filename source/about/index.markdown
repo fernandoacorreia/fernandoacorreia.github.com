@@ -9,7 +9,7 @@ footer: true
 
 {% img right /images/Fernando_128x128.png %}
 
-I'm Brazilian, 42 years old. I've been developing software for over 25 years. Currently I work as a software architect
+I'm Brazilian, 43 years old. I've been developing software for over 25 years. Currently I work as a software architect
 developing reusable components for software-as-a-service products.
 
 I've worked with a lot of tools and technologies. At the moment I'm mainly using C# and developing for the Azure
