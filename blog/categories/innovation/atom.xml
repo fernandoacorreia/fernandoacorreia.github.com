@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: innovation | Fernando Correia's Blog]]></title>
+  <link href="http://www.fernandocorreia.info/blog/categories/innovation/atom.xml" rel="self"/>
+  <link href="http://www.fernandocorreia.info/"/>
+  <updated>2012-07-30T20:10:57-03:00</updated>
+  <id>http://www.fernandocorreia.info/</id>
+  <author>
+    <name><![CDATA[Fernando Correia]]></name>
+    <email><![CDATA[fernandoacorreia@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The impact of organizational model in innovation]]></title>
+    <link href="http://www.fernandocorreia.info/blog/2012/07/30/the-impact-of-organizational-model-in-innovation/"/>
+    <updated>2012-07-30T12:22:00-03:00</updated>
+    <id>http://www.fernandocorreia.info/blog/2012/07/30/the-impact-of-organizational-model-in-innovation</id>
+    <content type="html"><![CDATA[<p>Throughout my career I've been part of several innovation projects focused on applying emerging technologies to bring
+new or improved products to the market. One recent example, still ongoing, is leveraging cloud computing to develop
+cost-effective software-as-a-service offerings for the SMB (small and medium businesses) market segment.</p>
+
+<p>The business management software is undergoing a deep change from monolithic, massive products that enforce rigid
+business processes and are sold for costly up-front licensing fees towards more specialized, streamlined and flexible
+solutions offered as a service and billed according to usage.</p>
+
+<!-- more -->
+
+
+<p>David Yarnold speaks of this trend:</p>
+
+<p><blockquote><p>SAP’s walls are beginning to crumble, their armor is getting weak and cloud-based enterprise applications are no longer just for small businesses.</p><footer><strong>David Yarnold</strong> <cite><a href='http://www.forbes.com/sites/ciocentral/2011/10/24/for-enterprise-it-time-to-move-beyond-sap/'>For Enterprise IT, Time to Move Beyond SAP</a></cite></footer></blockquote></p>
+
+<p>While small startups and more established new companies such as Workday and Salesforce.com are quickly innovating and
+increasing their market share from the bottom up, traditional companies are slower, sometimes rehashing their
+legacy products and offering them as hosted services.</p>
+
+<p>One of the reasons is that incumbent companies are optimized for catering to their existing customer base and for
+sustainable innovation, while disruptive innovation requires a different mindset and orientation.</p>
+
+<p><blockquote><p>Established companies have the resources — the engineers, money, and technology — required to succeed at both sustaining and disruptive technologies. But their processes and values constitute disabilities in their efforts to succeed at disruptive innovation.</p><footer><strong>Clayton M. Christensen and Michael E. Raynor</strong> <cite><a href='http://www.amazon.com/The-Innovators-Solution-Sustaining-Successful/dp/1578518520'>The Innovator's Solution</a></cite></footer></blockquote></p>
+
+<p>So the lesson I take is that, at this point, business management software companies need to apply distinct processes and values
+to their disruptive innovation projects, or face being disrupted themselves.</p>
+]]></content>
+  </entry>
+  
+</feed>
