@@ -4,7 +4,7 @@
   <title><![CDATA[Fernando Correia's Blog]]></title>
   <link href="http://www.fernandocorreia.info/atom.xml" rel="self"/>
   <link href="http://www.fernandocorreia.info/"/>
-  <updated>2012-07-30T20:10:57-03:00</updated>
+  <updated>2012-08-10T08:40:08-03:00</updated>
   <id>http://www.fernandocorreia.info/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[I should pay more attention to Dojo Toolkit]]></title>
+    <link href="http://www.fernandocorreia.info/blog/2012/08/10/i-should-pay-more-attention-to-dojo-toolkit/"/>
+    <updated>2012-08-10T08:01:00-03:00</updated>
+    <id>http://www.fernandocorreia.info/blog/2012/08/10/i-should-pay-more-attention-to-dojo-toolkit</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been doing a lot of research on JavaScript frameworks for developing rich client-side line-of-business applications.
+So far Sencha&#8217;s <a href="http://www.sencha.com/products/extjs/">ExtJS</a> is the one I prefer for heavy-duty projects. But I&#8217;m constantly
+looking around for alternatives and, more recently, <a href="http://angularjs.org/">AngularJS</a> caught my attention as a great choice
+for structuring web apps.</p>
+
+<p>Browser application technology is blooming and, recently, Steven Sanderson wrote an
+<a href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">excellent review</a> comparing several frameworks. There was a remarkable absence, though, as one commenter said:</p>
+
+<blockquote><p>What happened to Dojo? It advocated lot of these principles years back. Was it ahead of time?</p><footer><strong>Geeth</strong> <cite><a href='http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/#comment-23446'>blog.stevensanderson.com/2012/&hellip;</a></cite></footer></blockquote>
+
+
+
+
+<!-- more -->
+
+
+<p>It&#8217;s been many years since I last thought about Dojo. In my mind it seemed to have fallen by the wayside. But that comment
+picked my interest, so I went up and updated myself on the current state of Dojo affairs.</p>
+
+<p>I found out that not only Dojo pioneered many of the techniques being applied today in several frameworks, but it has also evolved
+considerably. For instance, version 1.7 introduced an improved module system, and version 1.8 modernizes the MVC structure, among a plethora of other improvements that benefit rich client applications.</p>
+
+<p>Dojo seems to be very mature, complete and up-to-date. It has a steeper learning curve than other, smaller approaches, though,
+and historically documentation and guidance for newcomers has been lacking. By the way, this is being actively worked on as well.</p>
+
+<p>David Walsh wrote a <a href="http://net.tutsplus.com/tutorials/javascript-ajax/10-reasons-why-your-projects-should-use-the-dojo-toolkit/">very interesting article</a> on what Dojo has going for it. I recommend reading it if your&#8217;re interested
+in JavaScript frameworks, specially for larger applications.</p>
+
+<p>For now, I&#8217;ve decided to invest some time in learning Dojo and I&#8217;ll be sharing my experience as I go.</p>
+
+<blockquote><p>Don’t start you next project without checking out all of the features Dojo has to offer!</p><footer><strong>David Walsh</strong> <cite><a href='http://net.tutsplus.com/tutorials/javascript-ajax/10-reasons-why-your-projects-should-use-the-dojo-toolkit/'>10 Reasons Why Your Projects Should Use the Dojo Toolkit</a></cite></footer></blockquote>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The impact of organizational model in innovation]]></title>
