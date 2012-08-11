@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Fernando Correia's Blog]]></title>
   <link href="http://www.fernandocorreia.info/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://www.fernandocorreia.info/"/>
-  <updated>2012-08-10T09:20:44-03:00</updated>
+  <updated>2012-08-10T21:50:14-03:00</updated>
   <id>http://www.fernandocorreia.info/</id>
   <author>
     <name><![CDATA[Fernando Correia]]></name>
@@ -12,6 +12,224 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Dojo Toolkit: Hello World]]></title>
+    <link href="http://www.fernandocorreia.info/blog/2012/08/10/learning-dojo-toolkit-hello-world/"/>
+    <updated>2012-08-10T20:55:00-03:00</updated>
+    <id>http://www.fernandocorreia.info/blog/2012/08/10/learning-dojo-toolkit-hello-world</id>
+    <content type="html"><![CDATA[<p>After updating myself on the current situation of the <a href="http://dojotoolkit.org/">Dojo Toolkit</a>,
+my first practical step to start learning it was to follow along the first tutorial,
+<a href="http://dojotoolkit.org/documentation/tutorials/1.7/hello_dojo/">Hello Dojo!</a>.</p>
+
+<p>That tutorial gives a few basic pointers on including Dojo from a CDN and on basic application
+structure. It's well-written and easy to follow along. It covers the creation
+of several variations of a page and, although it has links to see the pages running online, it
+doesn't have a link to get the complete code, with modules, styles and all.</p>
+
+<p>As an exercise, I decided to create my own variation of this Hello World application and, simple
+as it is, host it in a <a href="https://github.com/fernandoacorreia/blog-samples/tree/master/dojo/hello-dojo">repository</a>.</p>
+
+<!-- more -->
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption>dojo/hello-dojo/index.html <a href='https://github.com/fernandoacorreia/blog-samples/blob/master/dojo/hello-dojo/index.html'>GitHub</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Hello Dojo<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style/demo.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>        <span class="c1">// Instead of using data-dojo-config, we’re creating a dojoConfig object</span>
+</span><span class='line'>        <span class="c1">// *before* we load dojo.js; they’re functionally identical.</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">dojoConfig</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>            <span class="nx">async</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class='line'>            <span class="c1">// This code registers the correct location of the &quot;app&quot; package</span>
+</span><span class='line'>            <span class="c1">// so we can load Dojo from the CDN whilst still being able to</span>
+</span><span class='line'>            <span class="c1">// load local modules</span>
+</span><span class='line'>            <span class="nx">packages</span><span class="o">:</span> <span class="p">[{</span>
+</span><span class='line'>                <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;app&quot;</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">location</span><span class="o">:</span> <span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\/[^/]+$/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;app&#39;</span>
+</span><span class='line'>            <span class="p">}]</span>
+</span><span class='line'>        <span class="p">};</span>
+</span><span class='line'>    <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'>    <span class="c">&lt;!-- load Dojo --&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">&quot;greeting&quot;</span><span class="nt">&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;script&gt;</span>
+</span><span class='line'>        <span class="c1">// Require the module we created, plus dojo/fx, and wait for DOM ready</span>
+</span><span class='line'>        <span class="nx">require</span><span class="p">([</span><span class="s2">&quot;app/myModule&quot;</span><span class="p">,</span> <span class="s2">&quot;dojo/fx&quot;</span><span class="p">,</span> <span class="s2">&quot;dojo/domReady!&quot;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">myModule</span><span class="p">,</span> <span class="nx">fx</span><span class="p">){</span>
+</span><span class='line'>            <span class="c1">// Use our module to change the text in the greeting</span>
+</span><span class='line'>            <span class="nx">myModule</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s2">&quot;greeting&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello, Dojo!&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="nx">fx</span><span class="p">.</span><span class="nx">slideTo</span><span class="p">({</span>
+</span><span class='line'>                <span class="nx">top</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">left</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">node</span><span class="o">:</span> <span class="nx">greeting</span>
+</span><span class='line'>            <span class="p">}).</span><span class="nx">play</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="c1">// After a few seconds, restore the text to its original state</span>
+</span><span class='line'>            <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>                <span class="nx">myModule</span><span class="p">.</span><span class="nx">restoreText</span><span class="p">(</span><span class="s2">&quot;greeting&quot;</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">},</span> <span class="mi">3000</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">});</span>
+</span><span class='line'>    <span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div>
+</figure></notextile></div></p>
+
+<p>The application's HTML page defines a Dojo configuration object (<code>dojoConfig</code>) that activates
+asynchronous module loading and sets the location of the <code>app</code> module (which will be defined below).
+This last step is necessary because Dojo will be loaded from a CDN and the application itself won't be hosted
+in that domain, so Dojo has to know where our module can be found.</p>
+
+<p>The script section inside the body references the modules it needs, which Dojo will load automatically
+and asynchronously. The last referenced module is the <code>dojo/domReady!</code> plugin, which will have the effect of
+making the application wait for the DOM ready event before continuing.
+Next, it calls the <code>setText</code> function in our application's module to set the text of a greeting,
+uses a transition from the <code>dojo/fx</code> module to reposition this greeting on the page and sets a timeout that,
+after a few seconds, will reset the text of the greeting using the <code>restoreText</code> function in our application's
+module.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption>dojo/hello-dojo/app/myModule.js <a href='https://github.com/fernandoacorreia/blog-samples/blob/master/dojo/hello-dojo/app/myModule.js'>GitHub</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// In app/myModule.js (which means this code defines</span>
+</span><span class='line'><span class="c1">// the &quot;app/myModule&quot; module):</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">define</span><span class="p">([</span>
+</span><span class='line'>    <span class="c1">// The dojo/dom module is required by this module, so it goes</span>
+</span><span class='line'>    <span class="c1">// in this list of dependencies.</span>
+</span><span class='line'>    <span class="s2">&quot;dojo/dom&quot;</span>
+</span><span class='line'><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">dom</span><span class="p">){</span>
+</span><span class='line'>    <span class="c1">// Once all modules in the dependency list have loaded, this</span>
+</span><span class='line'>    <span class="c1">// function is called to define the app/myModule module.</span>
+</span><span class='line'>    <span class="c1">//</span>
+</span><span class='line'>    <span class="c1">// The dojo/dom module is passed as the first argument to this</span>
+</span><span class='line'>    <span class="c1">// function; additional modules in the dependency list would be</span>
+</span><span class='line'>    <span class="c1">// passed in as subsequent arguments.</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">oldText</span> <span class="o">=</span> <span class="p">{};</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// This returned object becomes the defined value of this module</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">setText</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">text</span><span class="p">){</span>
+</span><span class='line'>            <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">dom</span><span class="p">.</span><span class="nx">byId</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span><span class='line'>            <span class="nx">oldText</span><span class="p">[</span><span class="nx">id</span><span class="p">]</span> <span class="o">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span><span class='line'>            <span class="nx">node</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">},</span>
+</span><span class='line'>        <span class="nx">restoreText</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">id</span><span class="p">){</span>
+</span><span class='line'>            <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nx">dom</span><span class="p">.</span><span class="nx">byId</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span><span class='line'>            <span class="nx">node</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">oldText</span><span class="p">[</span><span class="nx">id</span><span class="p">];</span>
+</span><span class='line'>            <span class="k">delete</span> <span class="nx">oldText</span><span class="p">[</span><span class="nx">id</span><span class="p">];</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">};</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div>
+</figure></notextile></div></p>
+
+<p>The <code>app/myModule.js</code> file defines our application's module, which is referred to in <code>index.html</code>.
+This module declares an array to store values, and two functions: one to set the innerHTML
+of a DOM element, and another to restore it to the value it had before.</p>
+
+<p>So, that's the basic structure of a Dojo application that does a lot of things:</p>
+
+<ul>
+<li>loads the library from a CDN;</li>
+<li>asynchronously loads modules on demand from the same CDN;</li>
+<li>loads a custom module defined by our application;</li>
+<li>manipulates DOM elements;</li>
+<li>applies a visual effect.</li>
+</ul>
+
+
+<p>Even in such a small example, it's obvious that the module system can scale to efficiently support
+large and complex applications.</p>
+
+<p>If you want to better understand what's going on I suggest you read the
+<a href="http://dojotoolkit.org/documentation/tutorials/1.7/hello_dojo/">official tutorial</a> itself.</p>
+
+<p>You'll find my code on <a href="https://github.com/fernandoacorreia/blog-samples/tree/master/dojo/hello-dojo">GitHub</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I should pay more attention to Dojo Toolkit]]></title>
@@ -31,7 +249,8 @@ for structuring web apps.</p>
 <!-- more -->
 
 
-<p>It's been many years since I last thought about Dojo. In my mind it seemed to have fallen by the wayside. But that comment
+<p>It's been many years since I last thought about <a href="http://dojotoolkit.org/">Dojo</a>.
+In my mind it seemed to have fallen by the wayside. But that comment
 picked my interest, so I went up and updated myself on the current state of Dojo affairs.</p>
 
 <p>I found out that not only Dojo pioneered many of the techniques being applied today in several frameworks, but it has also evolved
@@ -40,7 +259,7 @@ considerably. For instance, version 1.7 introduced an improved module system, an
 <p>Dojo seems to be very mature, complete and up-to-date. It has a steeper learning curve than other, smaller approaches, though,
 and historically documentation and guidance for newcomers has been lacking. By the way, this is being actively worked on as well.</p>
 
-<p>David Walsh wrote a <a href="http://net.tutsplus.com/tutorials/javascript-ajax/10-reasons-why-your-projects-should-use-the-dojo-toolkit/">very interesting article</a> on what Dojo has going for it. I recommend reading it if your're interested
+<p>David Walsh wrote a <a href="http://net.tutsplus.com/tutorials/javascript-ajax/10-reasons-why-your-projects-should-use-the-dojo-toolkit/">very interesting article</a> on what Dojo has going for it. I recommend reading it if you're interested
 in JavaScript frameworks, specially for larger applications.</p>
 
 <p>For now, I've decided to invest some time in learning Dojo and I'll be sharing my experience as I go.</p>
